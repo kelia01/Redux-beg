@@ -1,9 +1,12 @@
 import React from 'react'
+import Login from './components/Login'
+import Profile from './components/Profile'
 
 const App = () => {
   return (
     <div>
-    Hello world
+    <Profile />
+    <Login />
     </div>
   )
 }
