@@ -6,8 +6,8 @@ function Profile() {
   return (
     <div>
         <h1>Profile page</h1>
-        <p>Name: {User.name}</p>
-        <p>Age: {User.age}</p>
+        <p>Name: {user.name}</p>
+        <p>Age: {user.age}</p>
     </div>
   )
 }
