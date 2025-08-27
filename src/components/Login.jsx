@@ -1,12 +1,13 @@
 import { useDispatch } from "react-redux"
-import { login }  from '../features/User'
+import { login, logout }  from '../features/User'
 
 function Login() {
   const dispatch = useDispatch();
 
   return (
     <div>
-        <button onClick={() => {dispatch(login())}}>Login</button>
+        <button onClick={() => {dispatch(login({ name: "Pedro", age: 20 }))}}>Login</button>
+        <button onClick={() => {dispatch(logout({ name: "Pedro", age: 20 }))}}>Logout</button>
     </div>
   )
 }
