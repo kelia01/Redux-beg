@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialStateValue = { name: "", age: 0 }
 
-const userSlice = createSlice({
+export const userSlice = createSlice({
   name: "user",
   initialState: { value: initialStateValue },
   reducers: {
@@ -12,7 +12,7 @@ const userSlice = createSlice({
 
     logout: (state) => {
       state.value = initialStateValue
-    }
+    },
   },
 });
 

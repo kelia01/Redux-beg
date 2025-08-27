@@ -3,11 +3,13 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
-import { useReducer } from './features/User.jsx'
+import userReducer from './features/User.jsx'
+import themeReducer from './features/Theme.jsx'
 
 const store = configureStore({
   reducer: {
-    user: useReducer,
+    user: userReducer,
+    theme: themeReducer
   }
 })
 
